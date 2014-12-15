@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<title>Terrible Ninja</title>
+	<style type="text/css">header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+	font-family:sans-serif, Geneva;
+	border-radius: 5px;	 
+}
+h1 {
+	color: white;
+	font-family: "sans-serif", Arial, Helvetica, sans-serif;
+}
+p  {
+	color:white}
+body {
+	background-color: #FFF
+	border-radius: 5px;
+}
+
+.centeredImage
+    {
+    text-align:center;
+    margin-top:10px;
+    margin-bottom:10px;
+    padding:20px;
+	max-width: 500px;
+	border-radius: 5px;
+    }
+
+	</style>
+</head>
+<body>
+<header>&nbsp;
+
+
+<p class="centeredImage"><img src="images/logo.jpg" alt="1st logo design" p>
+</header>
+
+<p><canvas height="100" id="myCanvas" width="778"></canvas> <script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+ // round line cap (middle line)
+      context.beginPath();
+      context.moveTo(400, canvas.height / 2);
+      context.lineTo(canvas.width - 200, canvas.height / 2);
+      context.lineWidth = 20;
+      context.strokeStyle = '#FFFFFF';
+      context.lineCap = 'round';
+      context.stroke();
+</script></p>
+
+<form action="submission.php" method="post">Name: <input name="name" type="text" /><br />
+E-mail: <input name="email" type="text" /><br />
+<input type="submit" value="Submit Query" /></form>
+
+
+
+</body>
+</html>
